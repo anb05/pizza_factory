@@ -1,6 +1,6 @@
 <?php
 /**
- * The file have the class factory's ingredients
+ * The file have the class FrozenClams
  *
  * PHP version 7.1.1
  *
@@ -17,12 +17,19 @@
 
 namespace Factory\Models;
 
-use Factory\Contracts\Sauce;
+use Factory\Contracts\Clams;
 
-class PlumTomatoSauce implements Sauce
+/**
+ * Class FrozenClams
+ * @package Factory\Models
+ */
+class FrozenClams implements Clams
 {
+    /**
+     * @return string
+     */
     public function toString(): string
     {
-        return "Tomato sauce with plum tomatoes";
+        return "Frozen Clams from Chesapeake Bay";
     }
 }

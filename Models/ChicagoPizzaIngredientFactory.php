@@ -17,7 +17,6 @@
 
 namespace Factory\Models;
 
-
 use Factory\Contracts\Cheese;
 use Factory\Contracts\Clams;
 use Factory\Contracts\Dough;
@@ -26,6 +25,7 @@ use Factory\Contracts\PizzaIngredientFactory;
 use Factory\Contracts\Sauce;
 use Factory\Contracts\Veggies;
 
+use Factory\Models\Veggies as Vegg;
 class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory
 {
     /**
@@ -63,19 +63,19 @@ class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory
      *
      * @return Veggies
      */
-    public function createVeggies(): Veggies
+    public function createVeggies() : Veggies
     {
-        return new Veggies(
+        return new Vegg(
             new BlackOlives(),
             new Spinach(),
-            new EggPlant()
+            new Eggplant()
         );
     }
 
     /**
      * This function create object Pepperoni
      *
-     * @return Veggies
+     * @return Pepperoni
      */
     public function createPepperoni(): Pepperoni
     {
@@ -85,7 +85,7 @@ class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory
     /**
      * This function create object Clam
      *
-     * @return Veggies
+     * @return Clams
      */
     public function createClam(): Clams
     {

@@ -1,6 +1,6 @@
 <?php
 /**
- * The file have the class factory's ingredients
+ * The file have the class ThickCrustDough
  *
  * PHP version 7.1.1
  *
@@ -17,12 +17,19 @@
 
 namespace Factory\Models;
 
-use Factory\Contracts\Sauce;
+use Factory\Contracts\Dough;
 
-class PlumTomatoSauce implements Sauce
+/**
+ * Class ThickCrustDough
+ * @package Factory\Models
+ */
+class ThickCrustDough implements Dough
 {
+    /**
+     * @return string
+     */
     public function toString(): string
     {
-        return "Tomato sauce with plum tomatoes";
+        return "ThickCrust style extra thick crust dough";
     }
 }

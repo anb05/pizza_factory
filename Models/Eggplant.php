@@ -17,12 +17,19 @@
 
 namespace Factory\Models;
 
-use Factory\Contracts\Sauce;
+use Factory\Contracts\Veggies;
 
-class PlumTomatoSauce implements Sauce
+/**
+ * Class Eggplant
+ * @package Factory\Models
+ */
+class Eggplant implements Veggies
 {
+    /**
+     * @return string
+     */
     public function toString(): string
     {
-        return "Tomato sauce with plum tomatoes";
+        return "Eggplant";
     }
 }

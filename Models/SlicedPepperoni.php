@@ -17,12 +17,19 @@
 
 namespace Factory\Models;
 
-use Factory\Contracts\Sauce;
+use Factory\Contracts\Pepperoni;
 
-class PlumTomatoSauce implements Sauce
+/**
+ * Class SlicedPepperoni
+ * @package Factory\Models
+ */
+class SlicedPepperoni implements Pepperoni
 {
+    /**
+     * @return string
+     */
     public function toString(): string
     {
-        return "Tomato sauce with plum tomatoes";
+        return "Sliced Pepperoni";
     }
 }

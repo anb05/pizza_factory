@@ -1,6 +1,6 @@
 <?php
 /**
- * The file have an interface to create ingredients Cheese
+ * The file have an interface to create ingredients Veggies
  *
  * PHP version 7.1.1
  *
@@ -14,11 +14,11 @@
  *
  * @link https://github.com/anb05/pizza_factory.git
  */
-
 namespace Factory\Contracts;
 
+
 /**
- * This is interface for create Cheese
+ * This is interface for create Veggies
  *
  * @category Learn
  *
@@ -30,10 +30,10 @@ namespace Factory\Contracts;
  *
  * @link https://github.com/anb05/pizza_factory.git
  */
-interface Cheese
+interface Veggies
 {
     /**
-     * This function is create discribe of ingredients Cheese
+     * This function is create discribe of ingredients Veggies
      *
      * @return string
      */

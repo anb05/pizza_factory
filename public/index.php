@@ -6,20 +6,20 @@
  *
  * @category Learn
  *
- * @package SimpleFactory\Models
+ * @package Factory
  *
  * @author anb05 <alexandr05@list.ru>
  *
  * @license <GNU Public License>
  *
- * @link https://github.com/anb05/pizza.git
+ * @link https://github.com/anb05/pizza_factory.git
  */
 
 session_start();
 
 require_once __DIR__ . "/../Generals/myHelper.php";
 
-use SimpleFactory\Controllers\Order;
+use Factory\Controllers\App;
 
-$order = new Order;
-$order->fire();
+$app = new App();
+$app->startTest();

@@ -1,6 +1,6 @@
 <?php
 /**
- * The file have the class factory's ingredients
+ * The file have the class ParmesanCheese
  *
  * PHP version 7.1.1
  *
@@ -17,12 +17,13 @@
 
 namespace Factory\Models;
 
-use Factory\Contracts\Sauce;
 
-class PlumTomatoSauce implements Sauce
+use Factory\Contracts\Cheese;
+
+class ParmesanCheese implements Cheese
 {
     public function toString(): string
     {
-        return "Tomato sauce with plum tomatoes";
+        return "Shredded Parmesan";
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * The file have the class factory's ingredients
+ * The file have the class Onion
  *
  * PHP version 7.1.1
  *
@@ -17,12 +17,16 @@
 
 namespace Factory\Models;
 
-use Factory\Contracts\Sauce;
+use Factory\Contracts\Veggies;
 
-class PlumTomatoSauce implements Sauce
+/**
+ * Class Onion
+ * @package Factory\Models
+ */
+class Onion implements Veggies
 {
     public function toString(): string
     {
-        return "Tomato sauce with plum tomatoes";
+        return "Onion";
     }
 }

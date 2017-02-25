@@ -26,6 +26,8 @@ use Factory\Contracts\PizzaIngredientFactory;
 use Factory\Contracts\Sauce;
 use Factory\Contracts\Veggies;
 
+use Factory\Models\Veggies as Veg;
+
 class NYPizzaIngredientFactory implements PizzaIngredientFactory
 {
 
@@ -46,7 +48,7 @@ class NYPizzaIngredientFactory implements PizzaIngredientFactory
      */
     public function createSauce(): Sauce
     {
-        return new MarinaraSouce();
+        return new MarinaraSauce();
     }
 
     /**
@@ -66,10 +68,10 @@ class NYPizzaIngredientFactory implements PizzaIngredientFactory
      */
     public function createVeggies(): Veggies
     {
-        return new Veggies(
+        return new Veg(
             new Garlic(),
             new Onion(),
-            new Mushroom(),
+            new Mushrooms(),
             new RedPepper()
         );
     }
